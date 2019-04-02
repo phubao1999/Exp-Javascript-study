@@ -51,6 +51,7 @@ GG Key Word : MDN Math Object Để xem Document
 Math.PI: Số Pi (3.14......)
 Math.ceil: Làm tròn lên
 Math.floot: Làm Tròn Xuống
+Math.round: Làm tròn
 Math.max: Xuất kết quả lớn nhất trong mảng
 Math.min: Xuất kết quả nhỏ nhất trong mảng
 Math.random: Xuất ra kết quả ngẫu nhiên (Từ 0 -> 1)
