@@ -46,4 +46,11 @@ Giai đoạn 2 : Server sẽ xử lý yêu cầu.
 Giai đoạn 3: Truy vấn đến CSDL ( cập nhật ,hoặc truy vấn dữ liệu trong DB).
 Giai đoạn 4 : Trang php trên phía server sẽ trả lại kết quả
 Giai đoạn 5: AJAX sử dụng cơ chế bất đồng bộ để update lại những phần cần thay đổi thay vì phải làm mới lại toàn bộ trang web.
-.....Scope, callback, bất đồng bộ trong js
+--Math Object
+GG Key Word : MDN Math Object Để xem Document
+Math.PI: Số Pi (3.14......)
+Math.ceil: Làm tròn lên
+Math.floot: Làm Tròn Xuống
+Math.max: Xuất kết quả lớn nhất trong mảng
+Math.min: Xuất kết quả nhỏ nhất trong mảng
+Math.random: Xuất ra kết quả ngẫu nhiên (Từ 0 -> 1)
