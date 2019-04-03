@@ -55,3 +55,12 @@ Math.round: Làm tròn
 Math.max: Xuất kết quả lớn nhất trong mảng
 Math.min: Xuất kết quả nhỏ nhất trong mảng
 Math.random: Xuất ra kết quả ngẫu nhiên (Từ 0 -> 1)
+-- Toán Tử "New"
+Dùng để thay thế, cập nhật hay sửa đổi các dữ liệu trong mảng
+-- Prototype trong javascript
+Dùng để khai báo các phần tử dùng chung hoặc có nhiệm vụ chung với các mảng
+-- Lập trình OOP
++)Tính đóng gói (Encapsulation)
++)Tính kế thừa (Inheritance)
++)Tính đa hình (Polymorphism )
++)Tính trừu tượng(Abstraction)
