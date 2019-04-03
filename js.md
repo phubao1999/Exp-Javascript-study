@@ -56,11 +56,23 @@ Math.max: Xuất kết quả lớn nhất trong mảng
 Math.min: Xuất kết quả nhỏ nhất trong mảng
 Math.random: Xuất ra kết quả ngẫu nhiên (Từ 0 -> 1)
 -- Toán Tử "New"
-Dùng để thay thế, cập nhật hay sửa đổi các dữ liệu trong mảng
+Dùng để thay thế, cập nhật hay sửa đổi các dữ liệu trong mảng. giữ nguyên các tính chất cần giữ và cập nhật
 -- Prototype trong javascript
 Dùng để khai báo các phần tử dùng chung hoặc có nhiệm vụ chung với các mảng
 -- Lập trình OOP
-+)Tính đóng gói (Encapsulation)
-+)Tính kế thừa (Inheritance)
-+)Tính đa hình (Polymorphism )
-+)Tính trừu tượng(Abstraction)
++)Tính đóng gói (Encapsulation):
+Là cách che giấu các thuộc tính bên trong nó. Những đối tượng khác không thể trực tiếp tác động đến nó. Chỉ có thể thông qua các method public của nó thì mới có thể tác động được
++)Tính kế thừa (Inheritance):
+Là kỹ thuật cho phép kế thừa lại những tính năng mà đối tượng khác đã có, giúp tránh việc lặp code và dư thừa mà chỉ xử lại việc tương tự
++)Tính đa hình (Polymorphism ):
+Là một đối tượng thuộc các lớp khác nhau có thể hiểu cùng một thông điệp theo cách khác nhau
+VD: Chó và mèo khi nhận được mệnh lệnh "Hãy Kêu" Thì chó sẽ kêu Gâu Gâu còn mèo thì kêu Meo Meo.
+==> Cả 2 con vật trên đều hiểu được thông điệp "Hãy Kêu" và thực hiện theo cách của chúng
++)Tính trừu tượng(Abstraction):
+Là phương pháp trừu tượng hóa định nghĩa của 1 object nào đó qua các property(Đặc Điểm) và method(Hành động) mà object nào đó cần có
+VD: Chó cần định nghĩa nó bằng các property là "Cân Nặng" "Tên" "Tuổi" "Giống Chó" Hay method "Sủa" "Chạy" "Sở thích"
+-- Design Pattern 
+Đơn giản dễ hiểu nó là một mẫu thiết kế có sẵn, dùng để giải quyết vấn đề
+Design Pattern được tạo ra để giải quyết vấn đề, chứ không phải để phức tạp hóa nó
+-- Module system nodejs
+Là phương thức chia nhỏ file sever đễ dễ quản lý hơn. Ví dụ ta có obj index.js để thực hiện các method giữa chuột và mèo. Còn file index1.js và index2.js dùng để khai báo riêng ra chuột và mèo để dễ dàng quản lý. (Hay Dùng trong dự án lớn);
