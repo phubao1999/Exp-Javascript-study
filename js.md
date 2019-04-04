@@ -76,3 +76,17 @@ VD: Chó cần định nghĩa nó bằng các property là "Cân Nặng" "Tên" 
 Design Pattern được tạo ra để giải quyết vấn đề, chứ không phải để phức tạp hóa nó
 -- Module system nodejs
 Là phương thức chia nhỏ file sever đễ dễ quản lý hơn. Ví dụ ta có obj index.js để thực hiện các method giữa chuột và mèo. Còn file index1.js và index2.js dùng để khai báo riêng ra chuột và mèo để dễ dàng quản lý. (Hay Dùng trong dự án lớn);
+Cú pháp file chính sẽ là 
+>> var cat = require('./cat.js');
+Ở file cat.js sẽ có cú pháp
+>> module.export = cat;
+-- Node Built-in modules
+Là các module mà cộng đồng nodejs đã build sẵn(Tương tự như bootstrap)
+-- NPM (Node Package Manager)
+Cách cài đặt npm
++)Dir xem danh sách và Cd tới thư mục cần khởi tạo
++)npm init. Nhập các thông số
++)npm install readline-sync --save
++)var readlineSync = require('readline-sync');
+>> Đây là Comandline Interface
+
