@@ -89,4 +89,6 @@ Cách cài đặt npm
 +)npm install readline-sync --save
 +)var readlineSync = require('readline-sync');
 >> Đây là Comandline Interface
-
+-- JSON method
++)stringify: Dùng để chuyển object sang dạng string của json
++)parse: Dùng để chuyển string của json sang dạng object

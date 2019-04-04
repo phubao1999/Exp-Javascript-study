@@ -1,0 +1,17 @@
+[
+    {
+        "id": 123,
+        "sex": "male",
+        "class": "A1"
+    },
+    {
+        "id": 124,
+        "sex": "female",
+        "class": "A1"
+    },
+    {
+        "id": 125,
+        "sex": "female",
+        "class": "A2"
+    }
+]
