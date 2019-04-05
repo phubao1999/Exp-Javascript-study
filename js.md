@@ -108,6 +108,35 @@ DOM Node, Nodelist: có nhiệm vụ thao tác với HTML thông qua đối tư�
         console.log(b)
     }   
 Ternary Operator: Tương tự if...else
+-- Else If: Cú Pháp
+    if (Condition1){
+        // Do Something
+    } else if (Condition2){
+        // Do Something else
+    } else{
+        // Do Something else
+    }
+-- Cấu Trúc Switch Case (Tương Tự if...else Nhưng khi có quá nhiều điều kiện thì nên dùng Switch case để trong gọn code hơn)
+    switch (expression) {
+        case value1:
+        // Do Something;
+        break;
+        case value2:
+        // Do Something;
+        break;
+        ...
+        default:
+        // Do Something;
+        break;
+    }
+-- Vòng Lặp While, Do...While (Ít Dùng)
+    While (Condition){
+        // Do Something
+    }
+    // Do...While 
+    do {
+        // Do Something
+    }   while (condition)
 
 
 

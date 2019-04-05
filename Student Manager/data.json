@@ -1,0 +1,32 @@
+[
+    {
+        "Name": "Bao",
+        "Age": 19,
+        "Class": "12A1"
+    },
+    {
+        "Name": "thien",
+        "Age": 19,
+        "Class": "9/1"
+    },
+    {
+        "Name": "Bo",
+        "Age": 12,
+        "Class": "8B"
+    },
+    {
+        "Name": "Hien Luong",
+        "Age": 19,
+        "Class": "12C2"
+    },
+    {
+        "Name": "Duc Chinh",
+        "Age": 20,
+        "Class": "12A1"
+    },
+    {
+        "Name": "Hoang Cong",
+        "Age": 19,
+        "Class": "12A4"
+    }
+]
