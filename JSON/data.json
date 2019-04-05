@@ -13,5 +13,10 @@
         "id": 125,
         "sex": "female",
         "class": "A2"
+    },
+    {
+        "id": 133,
+        "sex": "malde",
+        "class": "C1"
     }
 ]

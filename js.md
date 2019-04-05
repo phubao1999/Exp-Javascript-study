@@ -92,3 +92,22 @@ Cách cài đặt npm
 -- JSON method
 +)stringify: Dùng để chuyển object sang dạng string của json
 +)parse: Dùng để chuyển string của json sang dạng object
+++-- DOM trong JS (Document Object Model)
+<!-- DOM document: có nhiệm vụ lưu trữ toàn bộ các thành phần trong tài liệu của website
+DOM element: có nhiệm vụ truy xuất tới thẻ HTML nào đó thông qua các thuộc tính như tên class, id, name của thẻ HTML
+DOM HTML: có nhiệm vụ thay đổi giá trị nội dung và giá trị thuộc tính của các thẻ HTML
+DOM CSS: có nhiệm vụ thay đổi các định dạng CSS của thẻ HTML
+DOM Event: có nhiệm vụ gán các sự kiện như onclick(), onload() vào các thẻ HTML
+DOM Listener: có nhiệm vụ lắng nghe các sự kiện tác động lên thẻ HTML đó
+DOM Navigation dùng để quản lý, thao tác với các thẻ HTML, thể hiện mối quan hệ cha - con của các thẻ HTML
+DOM Node, Nodelist: có nhiệm vụ thao tác với HTML thông qua đối tượng (Object) -->
+-- If...else Js: Cú Pháp 
+    if(a===b){
+        console.log(a)
+    } else {
+        console.log(b)
+    }   
+Ternary Operator: Tương tự if...else
+
+
+
