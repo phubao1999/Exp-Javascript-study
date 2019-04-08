@@ -137,6 +137,7 @@ Ternary Operator: Tương tự if...else
     do {
         // Do Something
     }   while (condition)
-
+-- Sử Dụng Promise
+Nó dùng để giải quyết vấn đề callBackHel (Hiệu ứng kim tự tháp trong viết code làm code có vấn đề)
 
 
