@@ -36,27 +36,38 @@ function readFilePromise(path) {
     });
 }
 
-readFilePromise('song1.txt')
-    .then(function(song1){
-        console.log(song1);
-    })
-    .catch(function(err){
-        console.log(error);
-    })
+// readFilePromise('song1.txt')
+//     .then(function(song1){
+//         console.log(song1);
+//     })
+//     .catch(function(err){
+//         console.log(error);
+//     })
 
-readFilePromise('song2.txt')
-    .then(function(song2){
-        console.log(song2);
-    })
-    .catch(function(err){
-        console.log(error);
-    })
+// readFilePromise('song2.txt')
+//     .then(function(song2){
+//         console.log(song2);
+//     })
+//     .catch(function(err){
+//         console.log(error);
+//     })
 
-// Chỗ Dưới Đây Sẽ Bị Báo Lỗi
-readFilePromise('song3.txt')
-    .then(function(song3){
-        console.log(song3);
-    })
-    .catch(function(err){
-        console.log(error);
-    })
+// // Chỗ Dưới Đây Sẽ Bị Báo Lỗi
+// readFilePromise('song3.txt')
+//     .then(function(song3){
+//         console.log(song3);
+//     })
+//     .catch(function(err){
+//         console.log(error);
+//     })
+
+// Cách Dùng promise.all
+
+Promise.all([
+    readFilePromise('./song1.txt'),
+    readFilePromise('./song2.txt')  //Resolve
+]).then(function(values){
+    console.log(values);
+}).catch(function(err){
+    console.log(error);
+});
