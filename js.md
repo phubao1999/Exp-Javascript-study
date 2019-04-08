@@ -138,6 +138,12 @@ Ternary Operator: Tương tự if...else
         // Do Something
     }   while (condition)
 -- Sử Dụng Promise
-Nó dùng để giải quyết vấn đề callBackHel (Hiệu ứng kim tự tháp trong viết code làm code có vấn đề)
-
+Nó dùng để giải quyết vấn đề callBackHel (Hiệu ứng kim tự tháp trong viết code làm code có vấn đề). Nếu Không quan tâm đến thứ tự sắp xếp của các file có một cách viết nhanh hơn và gọn hơn đó là sử dụng promise.all
+--Scope: là phạm vi hoạt động của một biến
++)Global Scope(Phạm vi ngoài)
++)Local Scope(Phạm vi bến trong biến)
+--DatabaseDesign:
++)tách nhỏ các mảng
++)Cho id cho các phần tử của data
++) Thay các phần tử bị lặp bằng các id đã được gán
 
