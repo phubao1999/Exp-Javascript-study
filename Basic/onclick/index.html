@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+</head>
+<body>
+    <h1>This Is Your List Thing You Have To Do In Your Day</h1>
+    <h3>Please Write Your Work And Click "ADD" Button</h3>
+    <input type="text" id="new-item">
+    <button onclick="addItem()">Add</button>
+    <ul id="todo-list">
+
+    </ul>
+
+    <script type="text/javascript">
+        var todoList = [];
+
+        function addItem(){
+            // console.log('Chay Chua Ban oi');
+            var input = document.getElementById('new-item');
+            var newItem = input.value;
+            todoList.push(newItem);
+            render();
+            input.value = '';
+        };
+
+        function render(){
+            var htmlList = document.getElementById('todo-list');
+            var content = todoList.map(function(item){
+                return '<li>' + item + '</li>'; 
+            });
+            htmlList.innerHTML = content.join('');
+        }
+
+        render();
+    </script>
+</body>
+</html>
