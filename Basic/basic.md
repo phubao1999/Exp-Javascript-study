@@ -27,3 +27,11 @@ http-equiv	Được sử dụng cho các Header thông báo phản hồi HTTP. V
 Debug: Giải quyết lỗi
 Constack: Vd như phần 1 và 2 push vào và rồi sau đó xử lý xong thì phần 2 pop ra và như thế với phần 1
 Breakpoint: Sử dụng sources trong chrome dev tool. Như kiểu ngắt chỗ chạy code tại dòng nào đấy
+-- Cài Firebase Hoisting
+-firebase login
+-firebase init
+-create new project
+-firebase serve
+-Copy code từ file muốn up lên vào index.html từ folder public vừa khởi tạo
+-firebase deploy
+-- Data atributes
