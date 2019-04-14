@@ -11,7 +11,7 @@ a.unshift(5): Đẩy vào giá trị đầu của mảng a là 5 và xuất kế
 a.map: Biến đổi các phần tử trong mảng a. Ví dụ: Mảng a có 1 2 3 4. Sau khi biến đổi bằng .Map (Mũ 2 Lên) Mảng a sẽ trở thành 1 4 9 16
 a.filter: Lọc mảng a. Ví dụ: Mảng có 1 2 3 4. Sau khi biến đổi mảng bằng .filter ( % 2 === 0 ) Mảng a sẽ trở thành 2 và 4.
 a.find: Tìm giá trị đầu tiên thỏa mãn điều kiện. Ví Dụ: mảng có 1 2 3 4. Sau khi biến đổi mảng bằng .find ( % 2 === 0) Mẩng sẽ trở thành 2.
-a.reduce: Biến đổi các giá trị nó với nha. Ví Dụ: Mảng có 1 2 3 4. Sau khi Biến đổi mảng .reduce (return a+b)Mảng sẽ trở thành 10. (1 2; 3 3; 6 4; 10)
+a.reduce: Biến đổi các giá trị nó với nhau. Ví Dụ: Mảng có 1 2 3 4. Sau khi Biến đổi mảng .reduce (return a+b)Mảng sẽ trở thành 10. (1 2; 3 3; 6 4; 10)
 a.sort: Sắp xếp giá trị trong mảng. Ví Dụ: mảng có 1 3 9 5 2. Sau khi biến đổi mảng .sort với các cú pháp như sau
 var numbers = [1, 3, 9, 5, 2];
 var ascendingNumbers = numbers.sort(function(a, b){
@@ -141,9 +141,16 @@ Ternary Operator: Tương tự if...else
 Nó dùng để giải quyết vấn đề callBackHel (Hiệu ứng kim tự tháp trong viết code làm code có vấn đề). Nếu Không quan tâm đến thứ tự sắp xếp của các file có một cách viết nhanh hơn và gọn hơn đó là sử dụng promise.all
 --Scope: là phạm vi hoạt động của một biến
 +)Global Scope(Phạm vi ngoài)
-+)Local Scope(Phạm vi bến trong biến)
++)Local Scope(Phạm vi bên trong biến)
 --DatabaseDesign:
 +)tách nhỏ các mảng
 +)Cho id cho các phần tử của data
 +) Thay các phần tử bị lặp bằng các id đã được gán
+-- Khởi tạo expessjs (FW của js)(Chạy trên nền tảng của nodejs)
++) Cd tới ổ khởi tạo
++) npm init
++) npm install express --save
++) Node index.js >>> Sever listening on port3000
++) Truy Cập trên Browser localhost:3000
+
 
