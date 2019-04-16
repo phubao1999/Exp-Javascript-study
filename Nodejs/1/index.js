@@ -1,5 +1,16 @@
 var expess = require('express');
 var app = expess();
+var bodyParser = require('body-parser');
+var low = require('lowdb');
+var FileSync = require('lowdb/adapters/FileSync');
+var adapter = new FileSync('db.json');
+
+db = low(adapter);
+
+// Set some defaults (required if your JSON file is empty)
+db.defaults({ users: [] })
+  .write()
+
 
 var port = 3000;
 
@@ -9,6 +20,9 @@ app.set('views', './views')
 //     console.log('Sever listening on port 3000');
 // });
 
+app.use(bodyParser.json()); // for parsing application/json
+app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
+
 app.get('/', function(request, response){
     response.render('index', {
         name: 'Bao'
@@ -16,16 +30,10 @@ app.get('/', function(request, response){
 });
 
 
-var users = [
-    {id : 1, name: 'Bao'},
-    {id : 2, name: 'Dung'},
-    {id : 3, name: 'Duc'},
-    {id : 4, name: 'Huy'},
-    {id : 5, name: 'Luong'}
-]
+
 app.get('/users', function(request, response){
     response.render('users/index', {
-        users: users
+        users: db.get('users').value()
     });
 });
 
@@ -37,6 +45,25 @@ app.get('/users/search', function(request, response){
     response.render('users/index', {
         users: matchedUsers
     });
+});
+
+app.get('/users/create', function(req, res){
+    res.render('users/create');
+});
+
+app.get('/users/:id', function(req, res){
+    var id = parseInt(req.params.id);
+
+    var user = db.get('users').find({id : id}).value();
+
+    res.render('users/view', {
+        user: user
+    });
+});
+
+app.post('/users/create', function(req, res){
+    db.get('users').push(req.body).write();
+    res.redirect('/users');
 });
 
 app.listen(3000, function(){

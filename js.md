@@ -153,4 +153,5 @@ Nó dùng để giải quyết vấn đề callBackHel (Hiệu ứng kim tự th
 +) Node index.js >>> Sever listening on port3000
 +) Truy Cập trên Browser localhost:3000
 -- Cách phân chia giao diện trong nodejs với Template Engine (Pug)
+-- Auto reset Server bang nodemon
 
