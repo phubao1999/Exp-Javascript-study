@@ -154,4 +154,13 @@ Nó dùng để giải quyết vấn đề callBackHel (Hiệu ứng kim tự th
 +) Truy Cập trên Browser localhost:3000
 -- Cách phân chia giao diện trong nodejs với Template Engine (Pug)
 -- Auto reset Server bang nodemon
+Mô Hình MVC (Model -- View -- Controller)
+Model: Đây là thành phần chứa tất cả các nghiệp vụ logic, phương thức xử lý, truy xuất db, đối tượng mô tả dữ liệu như các class, hàm xử lý
+View: Đảm nhận việc hiển thị thông tin, tương tác với người dùng, nơi chứa tất cả các đối tượng GUI như textbox, img,... Hiểu một cách đơn giản, nó là tập hợp các form hoặc các file html
+Luồng đi của mô hình MVC: 
++) Khi có một yêu cầu từ phía client gửi đến server, Bộ phận controller có nhiệm vụ yêu cầu, xử lý yêu cầu đó. Và nếu cần, nó sẽ gọi đến phần model, vốn là bộ phận làm việc với db.
++) Sau khi xử lý xong, toàn bộ kết quả được đẩy về phần view. Tại View, sẽ gen (render) ra mã HTML tạo nên dao diện, và trả toàn bộ html về trình duyệt để hiển thị
+++) Ưu điểm: Thể hiện tính chuyên nghiệp trong lập trình, phân tích thiết kế. Do được chia thành các phần độc lập nên giúp phát triển ứng dụng nhanh, đơn giản, dễ nâng cấp và bảo trì
+++) Nhược điểm: Đối với dự án nhỏ việc áp dụng mô hình MVC gây sự cồng kềnh, tốn thời gian trong quá trình phát triển. Tốn thời gian trung chuyển dữ liệu các thành phần
+
 
