@@ -41,6 +41,7 @@ This: con trỏ this thường được sử dụng để chỉ đến object ch
 Array: Thứ Tự Dữ Liệu là Quan Trọng Nhất (z-index)
 Object: Tên của dữ liệu là quan trọng nhất (key: 'Value')
 --Các Bước trong ajax
+(Ajax là kỹ thuật giúp trang web load nhanh hơn giàu tính tương tác với người dùng hơn)
 Giai đoạn 1: Client gửi yêu cầu lên phía server sử dụng XMLHttpRequest. ( trong giai đoạn này sẽ gửi yêu cầu lên một trang php trên phía server).
 Giai đoạn 2 : Server sẽ xử lý yêu cầu.
 Giai đoạn 3: Truy vấn đến CSDL ( cập nhật ,hoặc truy vấn dữ liệu trong DB).
@@ -162,5 +163,6 @@ Luồng đi của mô hình MVC:
 +) Sau khi xử lý xong, toàn bộ kết quả được đẩy về phần view. Tại View, sẽ gen (render) ra mã HTML tạo nên dao diện, và trả toàn bộ html về trình duyệt để hiển thị
 ++) Ưu điểm: Thể hiện tính chuyên nghiệp trong lập trình, phân tích thiết kế. Do được chia thành các phần độc lập nên giúp phát triển ứng dụng nhanh, đơn giản, dễ nâng cấp và bảo trì
 ++) Nhược điểm: Đối với dự án nhỏ việc áp dụng mô hình MVC gây sự cồng kềnh, tốn thời gian trong quá trình phát triển. Tốn thời gian trung chuyển dữ liệu các thành phần
+--) Cookie(Là 1 bản text nhỏ để nhớ đến người dùng được lưu ở client) < Session(Vùng nhớ tạm thời) < Database(Vùng nhớ lâu dài)
 
 
