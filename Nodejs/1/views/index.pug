@@ -1,2 +1,15 @@
-h1 Hello Word!!! From #{name}
-a(href="/users") UserList
+extends ./layouts/common.pug
+
+block content
+
+    ul(class="nav")
+        li(class="nav-item")
+            img(src="img/photo.png", alt="", href="./")
+        li(class="nav-item")
+            a(class="nav-link active", href="/users") UserList
+        li(class="nav-item")
+            a(class="nav-link active", href="/users/index") Index
+        li(class="nav-item")
+            a(class="nav-link active", href="/users/create") Create
+    h1 Hello Word!!! From #{name}
+    a(href="/users") UserList
