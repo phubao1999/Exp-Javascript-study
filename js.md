@@ -1,3 +1,4 @@
+Client, Browser, XMLHttprequest
 For: Dùng Để Lặp stt ptu trong obj. Biết được vòng đang lặp qua là bao nhiêu
 For..of: Dùng để lặp ptu trong obj. Viết nhanh hơn
 For..in: Dùng để lặp các key trong obj.
@@ -164,5 +165,6 @@ Luồng đi của mô hình MVC:
 ++) Ưu điểm: Thể hiện tính chuyên nghiệp trong lập trình, phân tích thiết kế. Do được chia thành các phần độc lập nên giúp phát triển ứng dụng nhanh, đơn giản, dễ nâng cấp và bảo trì
 ++) Nhược điểm: Đối với dự án nhỏ việc áp dụng mô hình MVC gây sự cồng kềnh, tốn thời gian trong quá trình phát triển. Tốn thời gian trung chuyển dữ liệu các thành phần
 --) Cookie(Là 1 bản text nhỏ để nhớ đến người dùng được lưu ở client) < Session(Vùng nhớ tạm thời) < Database(Vùng nhớ lâu dài)
-
+--) Phân chia template trong SPA
+https://pugjs.org/api/getting-started.html
 
