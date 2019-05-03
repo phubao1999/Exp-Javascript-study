@@ -167,4 +167,4 @@ Luồng đi của mô hình MVC:
 --) Cookie(Là 1 bản text nhỏ để nhớ đến người dùng được lưu ở client) < Session(Vùng nhớ tạm thời) < Database(Vùng nhớ lâu dài)
 --) Phân chia template trong SPA
 https://pugjs.org/api/getting-started.html
-
+--) Tạo file .gitignore để quản lý những file bảo mật không đăng lên git
