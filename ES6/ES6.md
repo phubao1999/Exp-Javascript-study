@@ -13,7 +13,7 @@ for (var(let)(const) i = 0; i <5; i++){
 }
 // Ở trường hợp trên ta 3 trường hợp xảy ra.
 --) Khi khai báo var ta có thể console.log(i) ở bên ngoài scope {}(for)
---) Khi khai báo let ta không thể console.log(i) ở bên ngoài scope\
+--) Khi khai báo let ta không thể console.log(i) ở bên ngoài scope
 --) const không thể dùng trong for vì đơn giản const chỉ có thể khai báo 1 lần
 <!-- Function Content và method .bind()-->
 var mouse = {
@@ -38,3 +38,31 @@ say();
 var say = mouse.sayHi.bind(cat)
 // Trả kết quả là 'Hi, My name is tom'
 say();
+<!-- Arrow Function -->
+// Ví dụ dễ hiểu là khi dùng this trong function bình thường thì this sẽ tham chiếu đến obj chứa nó.
+// Còn arrow function khi dùng this thì nó sẽ tham chiếu đến thằng cha gần nhất của nó. :D
+var sum = (a, b) => {
+  return a + b;
+};
+sum (3 ,5);  (trả kết quả 8)
+var sum2 = (a) => a*a;
+sum2 (5);   (Trả kết quả 25)
+Ví dụ: 
+var arr = [1, 2, 3];
+arr.map(x => x*x);  (trả kết quả là 1, 4, 9)
+<!-- Template String -->
+function greating(name){
+  return `Hi, ${name} ${1 + 2}!`
+};
+var result = greating('Bao');
+console.log(result);  (Trả kết quả // Hi bao 3!)
+<!-- Arguments -->
+// Dùng để biến đổi dữ liệu của 1 mạng có n phần tử không xác định
+function sum() {
+  let result = 0;
+  for(let i = 0; i < arguments.length; i++){
+    result += arguments[i];
+  }
+  return result;
+}
+sum (1, 2, 3, 4, 5); //15
