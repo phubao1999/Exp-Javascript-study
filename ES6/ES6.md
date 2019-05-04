@@ -58,11 +58,30 @@ var result = greating('Bao');
 console.log(result);  (Trả kết quả // Hi bao 3!)
 <!-- Arguments -->
 // Dùng để biến đổi dữ liệu của 1 mạng có n phần tử không xác định
-function sum() {
-  let result = 0;
-  for(let i = 0; i < arguments.length; i++){
-    result += arguments[i];
+--) function sum() {
+      let result = 0;
+      for(let i = 0; i < arguments.length; i++){
+        result += arguments[i];
+      }
+    return result;
+    }
+    sum (1, 2, 3, 4, 5); //15
+--) function sum() {
+      const numbers = Array.from(arguments);
+      return numbers.reduce(function(sum, num){
+        return num + sum;
+      }, 0);
+    }
+    sum (1, 2, 3, 4, 5);  // Kết quả là 15
+<!-- Default Parameters -->
+function greeting(name = 'friend', language = 'en'){
+  if(language === 'en'){
+    return `Hi, ${name}`;
   }
-  return result;
+  if(language === 'ja'){
+    return `Kimochi, ${name}`;
+  }
+  return `Chào Bạn, ${name}`;
 }
-sum (1, 2, 3, 4, 5); //15
+
+greeting();  //Trả kết quả là Hi, friend
