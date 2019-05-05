@@ -175,3 +175,41 @@ const heroB = new Hero('B', 200, 5);
 console.log({ heroA, heroB });
 heroA.attack(heroB);
 console.log({heroA, heroB});
+<!-- Static -->
+// Nó dùng để defines một 1 method static của class (es6)
+class ClassWithStaticMethod {
+  static staticMethod() {
+    return 'static method has been called.';
+  }
+}
+
+console.log(ClassWithStaticMethod.staticMethod());
+// expected output: "static method has been called."
+<!-- Rest (Phần Còn Lại) -->
+// Nó khác với arguments. Nó trả phần còn lại của mảng còn arguments trả lại 1 obj
+function log (a, ...numbers){
+  console.log(a);
+  console.log(numbers);
+  console.log(arguments);
+}
+
+log(1, 2, 3, 4);
+===========================
+function sum(...nums){
+  return nums.reduce((a, b) => {
+    return a + b;
+  })
+}
+
+sum (1, 2, 3, 5, 4);  //15
+============================
+function concat(separator, ...strings){
+  return strings.join(separator);
+}
+
+concat('.', 'a', 'b', 'c');  //a.b.c
+<!-- Const (Trải ra) -->
+const a = [1, 2, 3];
+const b = [1, ...a, 4];
+console.log(a);  //[ 1, 2, 3 ]
+console.log(b);  //[ 1, 1, 2, 3, 4 ] (Trải giá trị của a vào trong b);
