@@ -85,3 +85,93 @@ function greeting(name = 'friend', language = 'en'){
 }
 
 greeting();  //Trả kết quả là Hi, friend
+<!-- Apply -->
+function sum (){
+  const numbers = Array.from(arguments);
+  return numbers.reduce((sum, num) => sum + num, 0);
+}
+
+// sum(1, 2, 3, 4);   //10
+
+function average (){
+  const x = sum.apply(null, arguments);
+  // sum / arguments.lenght
+  return x/arguments.length;
+}
+
+average(1, 2, 3, 4);   // 2.5 (Trung Bình Cộng);
+<!-- Enhanced object literals -->
+const name = 'tom';
+const cat = {
+  name,
+  run(){
+    console.log(`${this.name} is running`);
+  }
+}
+
+cat.run();  //tom is running
+<!-- Class -->
+class Mouse {
+  constructor(name){
+    this.name = name;
+  }
+
+  run(){
+    console.log(`${this.name} is running`);
+  }
+}
+
+const mouse = new Mouse('Jerry');
+mouse.run();    //jerry is running
+<!-- Phương thức ghi đè -->
+class CoffeeMachine {
+  makeCoffee() {
+    console.log('making coffee...')
+  }
+}
+
+class SpecialCoffeeMachine extends CoffeeMachine {
+  makeCoffee(){
+    console.log('Making coffee and do something....');
+  }
+}
+
+const coffeeMachine = new SpecialCoffeeMachine();
+coffeeMachine.makeCoffee();
+// Trả kết quả là making coffe and do something
+<!-- Super -->
+// Super dùng để kế thừa các thuộc tính (OOP) của base class(cha) được extends ở dòng 160 (Class rangedhero được kế thừa từ class hero)
+// Khi ta dùng lại các method giống nhau (Phương thức ghi đè, thi ta không thể dùng this) thay vào đó ta dùng super
+class Hero {
+  constructor(name, hp, damage){
+    this.name = name;
+    this.hp = hp;
+    this.damage = damage;
+  }
+
+  applyDamage(damage){
+    this.hp -= damage;
+  }
+
+  attack(enemy) {
+    enemy.applyDamage(this.damage);
+  }
+}
+
+class RangedHero extends Hero {
+  constructor(name, hp, damage, range){
+    super(name, hp, damage);
+    this.range = range;
+  }
+
+  attack(enemy){
+    super.attack(enemy);
+    this.hp += this.damage;
+  }
+}
+
+const heroA = new RangedHero('A', 100, 10);
+const heroB = new Hero('B', 200, 5);
+console.log({ heroA, heroB });
+heroA.attack(heroB);
+console.log({heroA, heroB});
