@@ -213,3 +213,23 @@ const a = [1, 2, 3];
 const b = [1, ...a, 4];
 console.log(a);  //[ 1, 2, 3 ]
 console.log(b);  //[ 1, 1, 2, 3, 4 ] (Trải giá trị của a vào trong b);
+<!-- Spread To Obj -->
+const obj1 = {
+  a: 1,
+  b: 2,
+  c: 3,
+  d: {e : 10}
+};
+ 
+let obj2 = {
+  ...obj1,
+  z: 1000
+};
+
+// obj2.d.e = 11;    // Cú pháp này sẽ tạo ra 1 bản shalow cloning
+
+console.log({ obj1, obj2 });
+<!-- Destructuring -->
+const arr = [10, 20, 30, 40, 50];
+const [a, , , ,d] = arr;
+console.log(d); //50
