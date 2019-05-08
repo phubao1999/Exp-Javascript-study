@@ -168,3 +168,4 @@ Luồng đi của mô hình MVC:
 --) Phân chia template trong SPA
 https://pugjs.org/api/getting-started.html
 --) Tạo file .gitignore để quản lý những file bảo mật không đăng lên git
+<!-- End -->
